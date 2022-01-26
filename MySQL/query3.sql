@@ -25,3 +25,6 @@ SELECT * FROM inventory;
 SELECT * FROM rental;
 SELECT inventory_id FROM inventory WHERE film_id = 1 AND store_id = 1;
 SELECT return_date FROM rental WHERE inventory_id = 1;
+
+
+SELECT COUNT(title) FROM film WHERE description LIKE "%egg%";
